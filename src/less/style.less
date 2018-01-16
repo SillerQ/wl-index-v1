@@ -1,0 +1,771 @@
+.header {
+  height: 72px;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  .left {
+    img.logo {
+      display: block;
+      width: auto;
+      height: 36px;
+    }
+
+    .keyname {
+      color: #4a4e5b;
+      font-size: 24px;
+      margin-left: 20px;
+    }
+    .teamname {
+
+      margin-left: 17px;
+      color: #484E5D;
+      font-size: 20px;
+      font-weight: 300;
+      span {
+        padding: 0 15px;
+        border-left: 1px solid rgba(0, 0, 0, .2);
+      }
+    }
+  }
+  .right {
+    a {
+      color: #a1a4aa;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin-right: 2.22em;
+      font-weight: 300;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .header-btn {
+      border: 1px solid #484E5D;
+      background-color: #fff;
+      margin-left: 30px;
+      //min-width: 114px;
+    }
+  }
+}
+
+.meaning {
+  background-color: #fff;
+  .container {
+    justify-content: space-between;
+  }
+  .left {
+    position: relative;
+    height: 490px;
+    img {
+      display: block;
+      width: 844px;
+      height: auto;
+      position: absolute;
+      left: -147px;
+    }
+  }
+  .right {
+    z-index: 1;
+    flex: 0 0 40%;
+    justify-content: flex-end;
+    display: flex;
+    padding-top: 46px;
+    .blue-btn {
+      background-color: #0F56D9;
+      color: #fff;
+      margin-top: 48px;
+      padding: 14px 24px;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 21px;
+        background: url("../images/download.svg") center no-repeat;
+        margin-right: 14px;
+      }
+    }
+  }
+}
+
+.scenes {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F7F9FA;
+  .row {
+    //width: 1120px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0
+    }
+    .item {
+      width: ~'calc((100% - 40px) / 2)';
+      //height: 208px;
+      background-color: #fff;
+      .left {
+        margin-left: 8%;
+        img {
+          display: block;
+          width: auto;
+          height: 80px;
+          margin-bottom: 20px;
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        img {
+          height: 208px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.getstart {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  .tit-img {
+    img {
+      width: 72px;
+      height: auto;
+    }
+  }
+  .left {
+    flex: 0 0 14%;
+    min-width: 154px;
+    margin-top: 30px;
+    .tab-box {
+      font-size: 1rem;
+      line-height: 22px;
+      position: relative;
+      padding: 0 34px;
+      .slide-box {
+        z-index: 0;
+        .selection {
+          position: absolute;
+          width: 100%;
+          border-radius: 4px;
+          background-color: #005EFF;
+          will-change: transform;
+          transform-origin: 50% 0;
+          transition: all .3s cubic-bezier(.165, .84, .44, 1);
+          display: block;
+          height: 44px;
+          top: 0;
+          left: 0;
+        }
+      }
+      ul {
+        z-index: 10;
+        text-align: center;
+        position: relative;
+        li {
+          a {
+            display: block;
+            color: rbga(0, 0, 0, .7);
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 44px;
+          }
+          .current {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    .tab-img {
+      position: relative;
+      padding: 0 6em;
+      .tab-con {
+        display: none;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border: 1px solid rgba(0,0,0,.08);
+          border-radius: 4px;
+        }
+        &:first-child {
+          display: block;
+        }
+      }
+      .tab-img .current {
+        display: inherit;
+      }
+    }
+  }
+}
+
+.install {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F7F9FA;
+  .tit-img {
+    img {
+      width: 72px;
+      height: auto;
+    }
+  }
+  figure {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 28px;
+    }
+    .tip {
+      color: rgba(0, 0, 0, .4);
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 19px;
+      font-style: normal;
+
+    }
+  }
+}
+
+.team {
+  padding-top: 80px;
+  background-color: #1551E2;
+  position: relative;
+  z-index: 0;
+  .bg-group {
+    width: 84%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .84;
+    .bgimgs {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+
+      &:nth-child(1) {
+        background-image: url("../images/bg_footerLeft.png");
+        background-position: 10px 8%;
+        background-size: 182px auto;
+      }
+      &:nth-child(2) {
+        background-image: url("../images/bg_footerCenter.png");
+        background-position: 64.5% bottom;
+        background-size: 355px auto;
+      }
+      &:nth-child(3) {
+        background-image: url("../images/bg_footerRight.png");
+        background-position: right -110px;
+        background-size: 177px auto;
+      }
+    }
+  }
+  .tit {
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .center-box {
+    flex-wrap: wrap;
+  }
+  figure {
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    background-size: 100%;
+    margin: 1.4em 35px;
+    z-index: 2;
+    &:nth-child(1) {
+      background-image: url("../images/xyf.png");
+    }
+    &:nth-child(2) {
+      background-image: url("../images/nd.png");
+    }
+    &:nth-child(3) {
+      background-image: url("../images/siller.png");
+    }
+    &:nth-child(4) {
+      background-image: url("../images/yangcy.png");
+    }
+    &:nth-child(5) {
+      background-image: url("../images/wyq.png");
+    }
+    .developer {
+      opacity: 0;
+      background-color: #F25828;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      color: #fff;
+      transition: all .4s;
+      flex-direction: column;
+      .icons{
+        width: 80%;
+        padding: 0 14px;
+        a{
+          flex: 1;
+          width: 20px;
+          height: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        a.qq{
+          background-image: url("../images/QQ.svg");
+        }
+        a.shape{
+          background-image: url("../images/world.svg");
+        }
+        a.dribbble{
+          background-image: url("../images/dribbble.svg");
+        }
+        a.github{
+          background-image: url("../images/github.svg");
+        }
+        a.pinterest{
+          background-image: url("../images/pin.svg");
+        }
+      }
+      .name {
+        padding-bottom: 10px;
+      }
+    }
+    &:hover .developer {
+      opacity: 1;
+    }
+  }
+}
+
+footer {
+  padding-top: 56px;
+  padding-bottom: 59px;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  margin: 0 12px;
+  width: 80%;
+  margin: auto;
+  p {
+    color: #fff;
+    text-align: center;
+    color: rbga(255, 255, 255, .7);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+}
+
+// pc超大屏 1380px
+@media (max-width: 1380px) {
+  .container {
+    //width: 1100px;
+  }
+}
+
+// 等于或小于 75*16 = 1200px（ pc宽屏）
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .content-text {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+
+  }
+
+  .meaning {
+    .left {
+      height: 400px;
+      img {
+        width: 604px;
+        left: -103px;
+      }
+    }
+    .right {
+      .blue-btn {
+        padding: 12px 18px;
+        i {
+          margin-right: 10px;
+          background-size: 86%;
+        }
+      }
+    }
+  }
+
+  .scenes {
+    .row {
+      margin-bottom: 20px;
+      .item {
+        width: ~'calc((100% - 20px) / 2)';
+        .left {
+          img {
+            height: 48px;
+          }
+          .seconed-tit {
+            font-size: 18px;
+          }
+        }
+        .right {
+          img {
+            height: 176px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 等于或小于  62*16 = 992px（pc窄屏）
+@media (max-width: 992px) {
+  .container {
+    width: 80%;
+  }
+
+  .btn {
+
+  }
+
+  .flex-colnum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    .right {
+      a {
+        font-size: 15px;
+        margin-right: 1em;
+      }
+      .header-btn {
+        font-size: 15px;
+        padding: 8px 12px;
+        margin-left: .6em;
+      }
+    }
+  }
+
+  .meaning {
+    .left {
+      height: auto;
+      img {
+        position: static;
+        width: 100%;
+      }
+    }
+    .right {
+      text-align: center;
+      padding-top: 0;
+      .title {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .blue-btn {
+        margin: auto;
+        margin-top: 28px;
+      }
+    }
+  }
+
+  .scenes .row .item .left .seconed-tit {
+    font-size: 16px;
+    min-width: 52%;
+  }
+
+  .getstart .right .tab-img {
+    padding: 0 3em;
+  }
+
+  .getstart .left .tab-box ul li a {
+    font-size: 16px;
+  }
+
+  .team {
+    figure {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  footer{
+    width: 100%;
+  }
+}
+// 等于或小于  860px(平板竖屏)
+@media (max-width: 860px){
+  .scenes {
+    .container {
+      width: 80%;
+    }
+    .row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .item {
+        width: 100%;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .left {
+          img {
+            height: 48px;
+            margin-bottom: 10px;
+          }
+          .seconed-tit {
+            font-size: 18px;
+          }
+        }
+        .right {
+          img {
+            height: 176px;
+          }
+        }
+      }
+    }
+  }
+}
+// 等于或小于 48*16 = 768px(平板竖屏)
+@media (max-width: 768px) {
+  .scenes, .install, .team {
+  }
+
+  .header {
+    height: 62px;
+    .left {
+      img.logo {
+        height: 20px;
+      }
+      .keyname {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+      .teamname {
+        font-size: 16px;
+      }
+    }
+    .right {
+      a {
+        font-size: 14px;
+      }
+      .header-btn {
+        font-size: 14px;
+      }
+    }
+  }
+
+
+
+  .install {
+    .colnum {
+      flex-direction: column;
+    }
+  }
+}
+
+// 等于或小于 34*16 = 667px（手机横屏）
+@media (max-width: 667px) {
+  h3 {
+    font-size: 26px;
+  }
+
+  .seconed-tit {
+    font-size: 18px;
+  }
+
+  .header {
+    .colnum {
+      width: 96%;
+    }
+  }
+
+  .install, .getstart, .scenes {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .tit-img {
+      img {
+        width: 60px;
+      }
+    }
+  }
+
+  .getstart .right .tab-img {
+    padding: 0px 1em;
+  }
+
+  .team {
+    .bg-group {
+      .bgimgs {
+        &:nth-child(1) {
+          background-size: 130px auto;
+        }
+        &:nth-child(2) {
+          background-size: 266px auto;
+        }
+      }
+    }
+    figure {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  footer {
+    padding-top: 16px;
+    padding-bottom: 19px;
+  }
+}
+
+// 等于或小于 34*16 = 544px（手机竖屏）
+@media (max-width: 544px) {
+  .header {
+    padding-top: 30px;
+    height: auto;
+    border-bottom: none;
+    .colnum {
+      justify-content: flex-start;
+      flex-direction: column;
+      .left {
+        flex-direction: column;
+        .center-box {
+          padding-bottom: 10px;
+        }
+        .keyname {
+          font-size: 30px;
+        }
+        img.logo {
+          height: 32px;
+        }
+        .teamname {
+          margin-left: 0;
+          font-size: 14px;
+          span {
+            border-left: 0;
+          }
+        }
+      }
+      .right {
+        margin-top: 8px;
+        .header-btn {
+          display: none
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .meaning {
+    padding-top: 34px;
+  }
+  .getstart {
+    .container {
+      flex-direction: column;
+      .left{
+        margin-top:0;
+      }
+      .right {
+        .tab-img {
+          padding: 0 0;
+        }
+      }
+    }
+  }
+}
+
+// 等于或小于 414px（手机竖屏）
+@media (max-width: 414px) {
+  h3{
+    font-size: 20px;
+  }
+  .seconed-tit {
+    font-size: 16px;
+  }
+  .content-text{
+    font-size: 14px;
+  }
+  .meaning {
+    .left {
+      justify-content: center;
+    }
+  }
+
+  .scenes .row .item .left .seconed-tit {
+    font-size: 14px;
+    text-align: center;
+    width: 52%;
+  }
+
+  .scenes .row .item .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    flex: 1;
+  }
+  .scenes .row .item .right img {
+    height: 142px;
+  }
+
+  .team {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .tit{
+      font-size: 20px;
+      width: 80%;
+      margin: auto;
+      line-height: 36px;
+    }
+    figure {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
